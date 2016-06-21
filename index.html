@@ -45,24 +45,18 @@
 							<a ng-class="{selected: status == ''} " href="#/">All</a>
 						</li>
 						<li>
-							<a ng-class="{selected: status == 'active'}" href="#/active">Active</a>
+					<!--		<a ng-class="{selected: status == 'active'}" href="#/active">Active</a> -->
 						</li>
 						<li>
 							<a ng-class="{selected: status == 'completed'}" href="#/completed">Favorites</a>
 						</li>
 					</ul>
-					<button id="clear-completed" ng-click="clearCompletedTodos()" ng-show="completedCount">Clear completed</button>
+				<!--	<button id="clear-completed" ng-click="clearCompletedTodos()" ng-show="completedCount">Clear completed</button> -->
 				</footer>
 			</section>
 			<footer id="info">
 				<p>Double-click to edit a todo</p>
-				<p>Credits:
-					<a href="http://twitter.com/cburgdorf">Christoph Burgdorf</a>,
-					<a href="http://ericbidelman.com">Eric Bidelman</a>,
-					<a href="http://jacobmumm.com">Jacob Mumm</a> and
-					<a href="http://blog.igorminar.com">Igor Minar</a>
-				</p>
-				<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+
 			</footer>
 		</script>
 		<script src="node_modules/todomvc-common/base.js"></script>
