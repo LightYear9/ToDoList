@@ -15,9 +15,6 @@
 				<header id="header">
 					<h1>Bookmark Manager</h1>
 					<form id="todo-form" ng-submit="addTodo()">
-						<input id="new-todo" placeholder="type anything" ng-model="newTodo" ng-disabled="saving" autofocus>
-						<input id="new-todo" placeholder="http://example.com" ng-model="newURL" ng-disabled="saving" autofocus>
-						<input class="btn-primary" type="submit" value="add button ">
 
 					</form>
 
@@ -40,8 +37,8 @@
 					</ul>
 				</section>
 				<footer id="footer" ng-show="todos.length" ng-cloak>
-					<span id="todo-count"><strong>{{remainingCount}}</strong>
-						<ng-pluralize count="remainingCount" when="{ one: 'site added', other: 'sites added' }"></ng-pluralize>
+					<span id="todo-count"><strong><!--{{remainingCount}}--></strong>
+						<ng-pluralize  count="remainingCount" when="{ one: '', other: '' }" --> ></ng-pluralize>
 					</span>
 					<ul id="filters">
 						<li>
