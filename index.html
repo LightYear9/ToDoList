@@ -15,12 +15,17 @@
 				<header id="header">
 					<h1>Bookmark Manager</h1>
 					<form id="todo-form" ng-submit="addTodo()">
-						<input id="new-todo" placeholder="Click to add a website" ng-model="newTodo" ng-disabled="saving" autofocus>
+						<input id="new-todo" placeholder="type anything" ng-model="newTodo" ng-disabled="saving" autofocus>
+						<input id="new-todo" placeholder="http://example.com" ng-model="newURL" ng-disabled="saving" autofocus>
+						<input class="btn-primary" type="submit" value="add button ">
+
 					</form>
+
+
 				</header>
 				<section id="main" ng-show="todos.length" ng-cloak>
-					<input id="toggle-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)">
-					<label for="toggle-all">Mark all as complete</label>
+			<!--		<input id="toggle-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)">
+					<label for="toggle-all">Mark all as complete</label> -->
 					<ul id="todo-list">
 						<li ng-repeat="todo in todos | filter:statusFilter track by $index" ng-class="{completed: todo.completed, editing: todo == editedTodo}">
 							<div class="view">
